@@ -1,0 +1,157 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: white;
+    border-bottom-width:1px ;
+    border-bottom-style:solid ;
+    border-bottom-color:rgb(196, 196, 196) ;
+    z-index: 3;
+}
+.left-head{
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+    
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.right-head{
+   
+    width: 180px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.hum-menu{
+height: 24px;
+margin-left: 24px;
+margin-right: 20px;
+cursor: pointer;
+}
+.yut-logo {
+height: 20px;
+cursor: pointer;
+}
+.se-bu {
+height: 40px;
+width: 66px;
+background-color: rgb(240, 240, 240);
+border-width: 1px;
+border-style: solid;
+border-color: rgb(182, 182, 182);
+margin-left: -1px;
+margin-right: 10px;
+position: relative;
+}
+.se-bu .tool , .voice-butt .tool , .upl .tool ,.app .tool ,.nof-div .tool{
+    font-family: roboto, arial ;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+     pointer-events: none;
+     white-space: nowrap;
+     
+}
+.se-bu:hover .tool ,.voice-butt:hover .tool , .upl:hover .tool ,.app:hover .tool ,.nof-div:hover .tool{
+    opacity: 1;
+}
+.serch{
+height: 25px;
+
+
+}
+.voice-butt{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+.voice {
+height: 24x;
+
+position: relative;
+}
+.voice-butt , .se-bu , .upl ,.app ,.nof-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-barr{
+    flex: 1;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+border-style:solid ;
+border-color: rgb(216, 215, 215);
+height: 36px;
+border-radius: 2px;
+width: 0;
+
+}
+@media (max-width :600px) {
+.search-barr {
+    width: 50px;
+}
+}
+.search-barr::placeholder {
+    font-family: roboto,arial;
+    font-size: 16px;
+}
+.upl-ic{
+    height: 24px;
+}
+.app-ic{
+    height: 24px;
+}
+.nof-ic{
+    height: 24px;
+}
+.nof-div{
+    position: relative;
+    
+}
+.nofs{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(199, 0, 0);
+    color: white;
+    font-family: roboto, arial;
+    font-size: 11px;
+padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.unm-ic{
+    height: 32px;
+    border-radius: 16px;
+   cursor: pointer;
+}
